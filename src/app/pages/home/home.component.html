@@ -1,0 +1,104 @@
+
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"  class="active"></li>
+        <li data-target="#carousel" data-slide-to="2"  class="active"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <div class="active item">
+            <img src="../../assets/img/k1.jpg" height="600px;" width="1800px;">
+        </div>
+        <div class="item">
+            <img src="../../assets/img/pxfuel.jpg" height="400px;" width="1200px;">
+        </div>
+        <div class="item">
+            <img src="../../assets/img/k1.jpg" height="400px;" width="1200px;">
+        </div>
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+</div>
+
+
+
+
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+    }
+
+    section {
+        padding: 2em;
+    }
+
+    .services {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .service {
+        flex: 1;
+        margin: 1em;
+        padding: 1em;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .service:hover {
+        transform: scale(1.05);
+    }
+
+    h3 {
+        color: #333;
+    }
+
+    p {
+        color: #555;
+    }
+</style>
+
+<body>
+
+<header>
+    <h1>KERALA TOURISM </h1>
+</header>
+
+<section>
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Tour package</h3>
+            <p>Description of Service 1 goes here.</p>
+        </div>
+
+        <div class="service">
+            <h3>Trip Planning</h3>
+            <p>Description of Service 2 goes here.</p>
+        </div>
+
+        <div class="service">
+            <h3>History telling</h3>
+            <p>Description of Service 3 goes here.</p>
+        </div>
+
+        <!-- Add more services as needed -->
+    </div>
+</section>
+</body>
