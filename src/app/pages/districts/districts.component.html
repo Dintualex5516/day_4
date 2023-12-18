@@ -1,17 +1,20 @@
 <div class="container">
     <div class="row">
    @for(item of districts; track item.id){
-   
-     <div class="card my-4 mx-3" style="width: 18rem;">
-       <img src="{{ item.img }}" class="card-img-top img1" alt="..." width="350px;" height="250px;">
+    <div class="col">
+
+     <div [routerLink]="['/districts',item.id]" class="card my-4 mx-3" style="width: 18rem;">
+      
        <div class="card-img-top my-6">
        <div class="card-body">
-         <h5 class="card-title" >{{ item.name }}</h5>
-         <p class="card-text">{{item.dis|slice:0:300}}Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-         <a [routerLink]="['/districts',item.id]" class="btn btn-primary">Go somewhere</a>
-       </div>
-     </div>
-    </div>
+          <img src="{{ item.img }}" class="card-img-top img1" alt="..." width="350px;" height="250px;">
+         <h5 class="card-title" style="text-align:center">{{ item.title }}</h5>
+         <!-- <p class="card-text">{{item.description|slice:0:300}} </p> -->
+         
+       
+     </div></div>
+    </div></div>
     }
     </div>
    </div>
+   
